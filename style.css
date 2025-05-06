@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset dan Font */
 body {
   margin: 0;
@@ -252,4 +253,260 @@ form textarea:valid {
     padding: 15px;
   }
   
+=======
+/* Reset dan Font */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+/* Kontainer Utama */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1f67ed;
+  color: rgb(1, 0, 0);
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.sidebar .logo {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sidebar h2 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #093373;
+}
+
+/* Konten */
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.content section {
+  display: none;
+}
+
+.content section.active {
+  display: block;
+}
+
+/* Heading */
+h2 {
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+/* Form */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #0b3d91;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #093373;
+}
+
+.hapus-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.anggota-card {
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+/* Default border (abu) */
+form input:invalid,
+form textarea:invalid {
+  border: 1px solid #ccc;
+}
+
+/* Saat form dikirimkan dan field invalid */
+form.submitted input:invalid,
+form.submitted textarea:invalid {
+  border: 2px solid red;
+}
+
+/* Saat field valid */
+form input:valid,
+form textarea:valid {
+  border: 2px solid green;
+}
+
+#data-pelatih {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.pelatih-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.pelatih-item img {
+  max-width: 100%;
+  border-radius: 12px;
+  height: auto;
+}
+
+/* Kategori */
+#kategori ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#kategori li {
+  margin-bottom: 8px;
+}
+
+.kategori-link {
+  color: #0b3d91;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.kategori-link:hover {
+  text-decoration: underline;
+}
+
+/* Gambar Kategori */
+#gambarKategori {
+  border-radius: 8px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.dokumentasi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 15px;
+  justify-content: center;
+}
+
+.dokumentasi-item {
+  flex: 0 0 calc(25% - 20px); /* 4 item per baris, dikurangi gap */
+  box-sizing: border-box;
+}
+
+.dokumentasi-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .dokumentasi-item {
+    width: 100%;
+  }
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .content {
+    padding: 15px;
+  }
+  
+>>>>>>> c76b1b90b28ad832787c2b874a2bb2fc14bba579
 }
